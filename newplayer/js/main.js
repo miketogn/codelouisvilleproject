@@ -1,7 +1,7 @@
       $('.clip').click(function(e){
         var counter = $('.counter', this);
         var clip = $('.audio-clip-itself',this)[0];
-        var clipduration = 30; // start with 30 sec since audio isn't loaded yet;
+        var clipduration = 30; 
         var clipcurrent = clip.currentTime;
         var showcurrent = 0;
         
