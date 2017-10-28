@@ -1,3 +1,17 @@
+ul {
+    list-style: none;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.clip-wrap {
+    position: relative;
+    width: 88%;
+}
+
 .clip {
     background: #F9F9F9;
     cursor: pointer;
@@ -9,6 +23,9 @@
     white-space: nowrap;
     transition: all 0.25s ease-in-out;
 }
+
+.counter.transition {
+    opacity: 0; }
 
 .clip:hover {
     background: #132329;
