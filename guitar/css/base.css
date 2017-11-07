@@ -1,0 +1,259 @@
+/* ------------------------
+	Base Styles
+-------------------------	*/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: none;
+}
+
+body {
+	color: #797e83;
+	font-size: 16px;
+	margin: 0;
+	line-height: 1.5;
+	font-family: 'Work Sans', sans-serif;
+}
+
+div {
+    display: block;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+a {
+	color: #656a6e;
+	text-decoration: none;
+	font-weight: 400;
+}
+
+.container {
+	width: 90%;
+	margin: 40px auto;
+}
+
+.main-header {
+	background-color: #0c69ac;
+	padding-left: 10%;
+	box-shadow: 5px 5px 5px #888888;
+}
+
+img {
+    display: block;
+}
+
+.inside-wrap {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.labeled-image {
+
+  margin: 1em auto;
+  position: relative;
+  width: 288px; }
+  @media only screen and (min-width: 620px) {
+    .labeled-image {
+      width: 576px; } }
+  @media only screen and (min-width: 1300px) {
+    .labeled-image {
+      width: 1152px; } }
+
+
+  .labeled-image img {
+  	border-radius: 10px;
+  	box-shadow: 5px 5px 5px #888888;
+    width: 100%; }
+
+.labeled {
+  
+  position: absolute;
+   }
+
+.labeled-trigger {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  margin-left: -16px;
+  background: url("../img/icon-circle-plus.png") center no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out; }
+
+
+  .labeled-trigger.active {
+    transform: rotate(135deg); }
+
+.labeled-close {
+  display: block;
+  float: right;
+  width: 24px;
+  height: 24px;
+  background: url("../img/icon-plux-gray.png") center no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  transform: rotate(45deg); }
+
+.labeled-caption {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.97);
+  opacity: 0;
+  z-index: 199;
+  transition: all 0.25s ease-in-out; }
+
+  @media only screen and (min-width: 1024px) {
+
+    .labeled-caption {
+      position: absolute;
+      left: -200%;
+      width: 0;
+      height: 0;
+      padding: 0;
+      overflow: hidden; } }
+
+  .labeled-caption.active {
+    left: 0;
+    opacity: 1; }
+
+    @media only screen and (min-width: 1024px) {
+
+      .labeled-caption.active {
+        left: -100px;
+        height: auto;
+        padding: 20px;
+        top: -30px;
+        width: 300px;
+        -webkit-box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+      }
+
+        .labeled-caption.active.yvaluehigh {
+          top: -90px; } }
+
+
+section {
+	border: 1px solid;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+
+
+/* ---------------------------
+			audio sample styles 
+----------------------------*/
+
+.clip-wrap {
+    position: relative;
+    width: 100%;
+}
+
+.clip {
+    background: #F9F9F9;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 4px;
+    overflow: hidden;
+    padding: 4px 12px 4px 24px;
+    position: relative;
+    white-space: nowrap;
+    transition: all 0.25s ease-in-out;
+}
+
+.counter.transition {
+    opacity: 0; }
+
+.clip:hover {
+    background: #132329;
+    color: #ffffff;
+    padding-left: 10px;
+}
+
+.clip:before {
+    background: url(../img/icon-play.png) right center no-repeat;
+    background-size: 200%;
+    content: '';
+    display: block;
+    height: 14px;
+    left: 7px;
+    overflow: hidden;
+    position: absolute;
+    top: 7px;
+    width: 14px;
+}
+
+.clip:hover:before {
+    opacity: 0;
+}
+
+.clipname.tighten {
+    letter-spacing: -0.04em;
+}
+
+.clipname {
+    position: relative;
+    z-index: 9;
+}
+
+.counter {
+    background: #b2caea;
+    left: 0;
+    height: 100%;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    width: 0;
+    transition: all 0.25s ease-in-out;
+}
+
+
+/* ---------------------------
+			neck section styles 
+----------------------------*/
+
+#neck {
+	padding: 10px 0;
+}
+
+#neck img {
+	border: solid 1px;
+  border-radius: 10px;
+	box-shadow: 5px 5px 5px #888888;
+  width: 50%;
+  margin: 20px auto;
+
+}
+
+/* -----------------------------
+			pickup section styles 
+------------------------------*/
+
+#pickups {
+	padding: 10px 0;
+}
+
+#pickups img {
+	border: solid 1px;
+  border-radius: 10px;
+	box-shadow: 5px 5px 5px #888888;
+  width: 50%;
+  margin: 20px auto;
+
+}

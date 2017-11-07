@@ -1,0 +1,71 @@
+/* ------------------------
+	Main Styles
+-------------------------	*/
+
+.main-header,
+.nav {
+	display: flex;
+	flex-direction: column;
+}
+
+.main-header {
+	padding: 2em;
+}
+
+.site-logo {
+	width: 80px;
+	align-self: center;
+}
+
+.nav {
+	margin-top: 1.5em;
+}
+
+.nav a {
+	display: block;
+	color: #fff;
+	font-size: 1.125em;
+	font-weight: 300;
+	text-align: center;
+	padding: .4em;
+	border-bottom: 1px solid #ebecec;
+	font-family: 'Anton', sans-serif;
+}
+
+.nav a:hover {
+	color: #f6d023;
+	border-bottom-color: #f6d023;
+}
+
+
+/* ------------------------
+	Media Queries
+-------------------------	*/
+
+@media (min-width: 769px) {
+	.main-header {
+		height: 200px;
+		flex-direction: row;
+
+	}
+	.site-logo {
+		margin-right: auto;
+		width: 130px;
+	}
+	.nav {
+		flex-direction: row;
+		margin-top: 3em;
+		margin-bottom: 20px;
+
+	}
+	.nav a {
+		border-bottom-color: transparent;
+	}
+}
+
+@media (min-width: 1025px) {
+
+	.site-logo {
+		width: 140px;
+	}
+}
