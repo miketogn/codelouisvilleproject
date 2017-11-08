@@ -1,3 +1,5 @@
+      // play audio clips
+
       $('.clip').click(function(e){
         var counter = $('.counter', this);
         var clip = $('.audio-clip-itself',this)[0];
@@ -45,6 +47,7 @@
         $('.labeled-trigger, .labeled-caption').removeClass('active');
       });
 
+      // add correct coordinates dependant screen/image size
     
       $('.labeled').each(function(){
 
@@ -58,15 +61,15 @@
           
           var multiplier = 2;
 
-        } else if (w >= 1300) {
+        } else if (w >= 1200) {
 
           var multiplier = 4;
 
         }
-        // get the current values
+        // get current values
         var thisx = $(this).data('xvalue');
         var thisy = $(this).data('yvalue');
-        // now bump them up
+        //apply correct values
         $(this).css({
           'left' : thisx * multiplier,
           'top' : thisy * multiplier
