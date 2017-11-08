@@ -57,7 +57,7 @@
 
           var multiplier = 1;
 
-        } else if (w >= 620) {
+        } else if (w < 1200) {
           
           var multiplier = 2;
 
