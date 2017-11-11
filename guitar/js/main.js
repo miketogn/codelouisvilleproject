@@ -49,29 +49,31 @@
 
       // add correct coordinates dependant screen/image size
     
-      $('.labeled').each(function(){
+      // $('.labeled').each(function(){ 
+      //   if($(".labeled-image").css("width") == "288px") {
+      //   var multiplier = 1;
+      //   } else if ($(".labeled-image").css("width") == "576px") {
+      //     var multiplier = 2;
+      //   } 
+      //   // get current values
+      //   var thisx = $(this).data('xvalue');
+      //   var thisy = $(this).data('yvalue');
+      //   //apply correct values
+      //   $(this).css({
+      //     'left' : thisx * multiplier,
+      //     'top' : thisy * multiplier
+      //   });
+      // });
 
-        var w = window.innerWidth;
-        
-        if( w < 620) {
+      // hamburger menu show/hide
 
-          var multiplier = 1;
-
-        } else if (w < 1200) {
-          
-          var multiplier = 2;
-
-        } else if (w >= 1200) {
-
-          var multiplier = 4;
-
-        }
-        // get current values
-        var thisx = $(this).data('xvalue');
-        var thisy = $(this).data('yvalue');
-        //apply correct values
-        $(this).css({
-          'left' : thisx * multiplier,
-          'top' : thisy * multiplier
-        });
-      });
+$(".hamburger").click(function() {
+  $(this).hide();
+  $('.cross').show();
+  $(".menu").slideToggle();
+});
+$(".cross").click(function() {
+  $(this).hide();
+  $('.hamburger').show();
+  $(".menu").slideToggle();
+});

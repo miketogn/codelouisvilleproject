@@ -8,6 +8,8 @@
 	flex-direction: column;
 }
 
+
+
 .main-header {
 	padding: 2em;
 }
@@ -34,7 +36,6 @@
 
 .nav a:hover {
 	color: #f6d023;
-	border-bottom-color: #f6d023;
 }
 
 
@@ -43,6 +44,14 @@
 -------------------------	*/
 
 @media (min-width: 769px) {
+
+	.row {
+	display: flex;
+	}
+
+	.col {
+		flex:1;
+	}
 	.main-header {
 		height: 200px;
 		flex-direction: row;
@@ -61,11 +70,62 @@
 	.nav a {
 		border-bottom-color: transparent;
 	}
+
 }
+
+
 
 @media (min-width: 1025px) {
 
 	.site-logo {
 		width: 140px;
 	}
+	.container {
+	width: 70%;
+	margin: 40px auto;
+}
+}
+
+.active{
+  display:block;
+  transition:all ease 0.3s;
+  }
+
+  .hamburger{
+	  background:none;
+	  position:absolute;
+	  top:0;
+	  right:0;
+	  line-height:45px;
+	  padding:5px 15px 0px 15px;
+	  color:#fff;
+	  border:0;
+	  font-size:1.4em;
+	  font-weight:bold;
+	  cursor:pointer;
+	  outline:none;
+	  z-index:10000000000000;
+	}
+.cross{
+	  background:none;
+	  position:absolute;
+	  top:0px;
+	  right:0;
+	  padding:13px 15px 0px 15px;
+	  color:#fff;
+	  border:0;
+	  font-size:3em;
+	  line-height:65px;
+	  font-weight:bold;
+	  cursor:pointer;
+	  outline:none;
+	  z-index:10000000000000;
+	  display:none;
+	}
+
+.menu {
+	z-index:1000000; 
+	width:100%; 
+	text-align:center;
+	display:none;
 }
