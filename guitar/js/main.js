@@ -67,13 +67,17 @@
 
       // hamburger menu show/hide
 
-$(".hamburger").click(function() {
-  $(this).hide();
-  $('.cross').show();
-  $(".menu").slideToggle();
-});
-$(".cross").click(function() {
-  $(this).hide();
-  $('.hamburger').show();
-  $(".menu").slideToggle();
+// $(".hamburger").click(function() {
+//   $(this).hide();
+//   $('.cross').show();
+//   $(".menu").slideToggle();
+// });
+// $(".cross").click(function() {
+//   $(this).hide();
+//   $('.hamburger').show();
+//   $(".menu").slideToggle();
+// });
+
+      $('.hamburger').on('click', function(){
+  $('.menu').slideToggle(200);
 });
