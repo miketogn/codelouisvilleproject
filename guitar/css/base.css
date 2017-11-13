@@ -158,6 +158,11 @@ section {
 	padding: 10px;
 }
 
+section a {
+  color: #0c69ac;
+  text-decoration: underline;
+  font-weight: 400;
+}
 
 
 /* ---------------------------
